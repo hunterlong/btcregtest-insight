@@ -30,6 +30,12 @@ bitcoin-cli -regtest sendtoaddress "mnk2URqujBqMEfhALMby1WZHoBRauW37Kg" 20 "" ""
 
 bitcoin-cli -regtest $AUTH generate 1
 
+bitcoin-cli -regtest sendtoaddress "mnJQyeDFmGjNoxyxKQC6MMFdpx77rYV3Bo" 1 "" "" true
+bitcoin-cli -regtest sendtoaddress "mnJQyeDFmGjNoxyxKQC6MMFdpx77rYV3Bo" 2 "" "" true
+bitcoin-cli -regtest sendtoaddress "mnJQyeDFmGjNoxyxKQC6MMFdpx77rYV3Bo" 3 "" "" true
+
+bitcoin-cli -regtest $AUTH generate 1
+
 bitcoin-cli -regtest $AUTH getbalance
 
 bitcoin-cli -regtest $AUTH stop
