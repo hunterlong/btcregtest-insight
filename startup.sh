@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf /data/bitcoin/regtest
+
 bitcoind -regtest -daemon --datadir=/data/bitcoin --config=/data/bitcoin/bitcoin.conf
 
 sleep 2
