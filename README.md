@@ -1,4 +1,4 @@
-# Bitcoin Regtest with Insight API [![Docker Build Status](https://img.shields.io/docker/build/hunterlong/btcregtest-insight.svg)](https://hub.docker.com/r/hunterlong/btcregtest-insight)
+# Bitcoin Regtest with Insight API [![Build Status](https://travis-ci.org/hunterlong/btcregtest-insight.svg?branch=master)](https://travis-ci.org/hunterlong/btcregtest-insight) [![Docker Build Status](https://img.shields.io/docker/build/hunterlong/btcregtest-insight.svg)](https://hub.docker.com/r/hunterlong/btcregtest-insight)
 
 Finally, a way to test your bitcoin applications using a Bitcoin Regtest network for temporary use. All you have to do is start this docker image, and connect your application to the Insight API endpoint! I've also created a [Litecoin Regtest Docker image](https://github.com/hunterlong/ltcregtest-insight) if that something you needed. 
 
