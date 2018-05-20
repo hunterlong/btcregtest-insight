@@ -27,4 +27,5 @@ before_install:
 script:
   - git clone https://github.com/hunterlong/insight-api-tester.git
   - cd insight-api-tester && npm install
+  - sleep 30
   - npm test
