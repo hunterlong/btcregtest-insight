@@ -26,5 +26,25 @@ mnk2URqujBqMEfhALMby1WZHoBRauW37Kg | cQrY4VypAuemJtHmNNJLyx1SNjY7mpfkdQEJpccpLSv
 ```
 Mnemonic phrase: `myth like bonus scare over problem client lizard pioneer submit female collect`
 
+## Implement Testing on Travis
+To use this with Travis, you'll need to add a couple things to your `.travis.yml` file. [insight-api-tester](https://github.com/hunterlong/insight-api-tester) is a basic application that uses this for testing. 
+```
+sudo: required
+
+notifications:
+  email: false
+
+services:
+  - docker
+
+before_install:
+  - docker run -it -d -p 3001:3001 hunterlong/btctest-insight:latest
+
+script:
+  - sleep 30        # give some time for BTC server to start.
+  - npm test        # your test command for app, API endpoint will be at http://localhost:3001/api
+```
+
+
 ## Why use this Docker Image?
 You are probably working on a Bitcoin application and you might be doing automated testing on Travis-CI, Drone, etc. Using this image will allow your testing to fully test the blockchain transaction features of your application. You would use the addresses and private keys above for testing transactions in your tests. 
