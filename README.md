@@ -27,7 +27,7 @@ mnk2URqujBqMEfhALMby1WZHoBRauW37Kg | cQrY4VypAuemJtHmNNJLyx1SNjY7mpfkdQEJpccpLSv
 Mnemonic phrase: `myth like bonus scare over problem client lizard pioneer submit female collect`
 
 ## Implement Testing on Travis
-To use this with Travis, you'll need to add a couple things to your `.travis.yml` file. [insight-api-tester](https://github.com/hunterlong/insight-api-tester) is a basic application that uses this for testing. 
+To use this with Travis, you'll need to add a couple things to your `.travis.yml` file. [insight-api-tester](https://github.com/hunterlong/insight-api-tester) is a basic application that uses this for testing. [![Build Status](https://travis-ci.org/hunterlong/insight-api-tester.svg?branch=master)](https://travis-ci.org/hunterlong/insight-api-tester)
 ```
 sudo: required
 
