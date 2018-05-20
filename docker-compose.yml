@@ -1,0 +1,7 @@
+version: '3'
+services:
+  btcserver:
+    image: hunterlong/btcregtest-insight
+    ports:
+      - "3001:3001"
+      - "8333:8333"
